@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для моей любимой ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Приветственная валентинка -->
+    <div class="valentine-card" id="valentineCard">
+        <div class="card-inner">
+            <div class="card-front">
+                <div class="heart"></div>
+                <h2>Нажми на сердечко 💖</h2>
+            </div>
+            <div class="card-back">
+                <img src="love.jpg" alt="Наше фото" class="our-photo">
+                <div class="message">
+                    <h3>Моя любимая</h3>
+                    <p>Каждый день с тобой на протяжении официальных 3-х лет и уже более долгих неофициальных мне приносит радость лапуська. Ты делаешь мою жизнь по-настоящему яркой и любовной. 
+                    Спасибо тебе за всё!  Люблю тебя больше всего на свете! 💕</p>
+                    <button class="continue-btn" onclick="closeValentine()">Открыть сюрпризы 🎁</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container hidden" id="mainContent">
+        <div class="heart main-heart"></div>
+        <h1>Для моей любимой 💖</h1>
+        <button class="surprise-btn" onclick="showSurprise()">Поздравляю тебя, моя любимая! 🎉</button>
+        
+        <div class="ticket-container" id="ticketContainer">
+            <!-- Билетики будут появляться здесь -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
